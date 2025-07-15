@@ -1,0 +1,193 @@
+/* @theme custom-theme */
+
+@import 'default';
+
+/* Custom color scheme */
+:root {
+  --primary-color: #2B3A67;
+  --secondary-color: #5D7399;
+  --accent-color: #E84855;
+  --text-color: #2D3436;
+  --background-color: #F5F7FA;
+}
+
+/* General slide styling */
+section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1 {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-top: 0.5em;
+}
+
+h3, h4, h5, h6 {
+  color: var(--secondary-color);
+}
+
+/* Lead slides (title slides) */
+section.lead {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.lead h1,
+section.lead h2 {
+  color: white;
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Code blocks */
+pre {
+  background-color: #2D3436;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+code {
+  background-color: #E8EAED;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Lists */
+ul, ol {
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Strong and emphasis */
+strong {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+em {
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent-color);
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75em;
+  text-align: left;
+}
+
+td {
+  padding: 0.75em;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+tr:nth-child(even) {
+  background-color: #F8F9FA;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  padding-left: 1em;
+  margin-left: 0;
+  color: var(--secondary-color);
+  font-style: italic;
+  background-color: rgba(232, 72, 85, 0.05);
+  padding: 0.5em 1em;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Page numbers */
+section::after {
+  color: var(--secondary-color);
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+/* Custom utility classes */
+.highlight {
+  background-color: rgba(232, 72, 85, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.center {
+  text-align: center;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.large {
+  font-size: 1.2em;
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* Math expressions */
+.katex {
+  font-size: 1.1em;
+}
+
+/* Image styling */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  color: var(--secondary-color);
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+}

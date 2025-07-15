@@ -1,0 +1,30 @@
+{
+  "name": "marp-sandbox",
+  "version": "1.0.0",
+  "description": "This repository is a playground for experimenting with Marp (Markdown Presentation Ecosystem) and its capabilities.",
+  "main": "index.js",
+  "scripts": {
+    "build": "marp presentations/example-presentation.md -o output/example-presentation.html",
+    "build:pdf": "marp presentations/example-presentation.md -o output/example-presentation.pdf",
+    "build:pptx": "marp presentations/example-presentation.md -o output/example-presentation.pptx",
+    "watch": "marp presentations/example-presentation.md -o output/example-presentation.html --watch",
+    "serve": "marp presentations/example-presentation.md -s",
+    "build:all": "npm run build && npm run build:pdf",
+    "theme": "marp presentations/example-presentation.md -o output/example-presentation.html --theme themes/custom-theme.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheTechChild/marp-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TheTechChild/marp-sandbox/issues"
+  },
+  "homepage": "https://github.com/TheTechChild/marp-sandbox#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0"
+  }
+}
